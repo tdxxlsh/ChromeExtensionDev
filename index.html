@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首页</title>
+    <title>首页</title>      
 </head>
 <body>
     <h1>你好，我是第一个页面</h1>
+    <div>这是我们的第三次见面</div><br>
+    用户名: <input type="text" name="name" id="name" value="张三"><br>
+    密码： <input type="password" name="password" id="pwd"><br>
+    <button onclick="login();">登录</button>
+
+   <script type="text/javascript">
+        function login(){
+            alert('How are you?');
+            var name = document.getElementById("name").value;
+            var pwd = document.getElementById("pwd").value;
+
+            alert('你的用户名是:' + ' '+name+'\n你的密码是：'+pwd);
+        }        
+    </script> 
 </body>
+
+
 </html>
